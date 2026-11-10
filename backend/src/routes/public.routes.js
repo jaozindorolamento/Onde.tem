@@ -1,0 +1,1 @@
+import {Router} from 'express';import {publicController} from '../controllers/public.controller.js';export function publicRoutes(db){const r=Router(),c=publicController(db);r.get('/health',c.health);r.get('/lojas',c.lojas);r.get('/categorias',c.categorias);return r;}
